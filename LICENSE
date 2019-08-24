@@ -1,6 +1,11 @@
+Original content for this project is licensed by jnf <code@jnf.dev> under a
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+Full license text available at https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Source code for this project is released under the MIT License; full text below:
 The MIT License (MIT)
 
-Copyright (c) 2015 gatsbyjs
+Copyright (c) 2019 jnf <code@jnf.dev>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,4 +24,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
