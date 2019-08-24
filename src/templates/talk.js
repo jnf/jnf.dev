@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from './page'
+import Seo from '../components/seo'
 import { ContentLicense } from '../components/license'
 
 export const pageQuery = graphql`
@@ -40,6 +41,7 @@ const Template = ({
   }
 }) =>
   <Layout>
+    <Seo title={title} />
     <article className='talk'>
       <h1>{title}<span>{date}</span></h1>
       <section
