@@ -34,8 +34,10 @@ const Template = ({
       html,
       frontmatter: {
         date,
+        location,
         path,
         title,
+        venue,
       }
     }
   }
@@ -43,7 +45,12 @@ const Template = ({
   <Layout>
     <Seo title={title} />
     <article className='talk'>
-      <h1>{title}<span>{date}</span></h1>
+      <h1>
+        {title}
+        <span className='talk-venue'>{venue}</span>
+        <span className='talk-location'>{location}</span>
+        <span className='talk-date'>{date}</span>
+      </h1>
       <section
         className='talk-content'
         dangerouslySetInnerHTML={{ __html: html }}
