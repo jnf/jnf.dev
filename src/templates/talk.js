@@ -2,9 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from './page'
+import { ContentLicense } from '../components/license'
 
 export const pageQuery = graphql`
   query($path: String!) {
+    site {
+      host
+      port
+    }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
@@ -17,14 +22,19 @@ export const pageQuery = graphql`
   }
 `
 
+const urlBuilder = ({ host, path, port }) => port
+  ? `//${host}:${port}${path}`
+  : `//${host}${path}`
+
 const Template = ({
   data: {
-    site,
+    site: { host, port },
     markdownRemark: {
       html,
       frontmatter: {
         date,
-        title
+        path,
+        title,
       }
     }
   }
@@ -35,6 +45,10 @@ const Template = ({
       <section
         className='talk-content'
         dangerouslySetInnerHTML={{ __html: html }}
+      />
+      <ContentLicense
+        title={title}
+        path={urlBuilder({ host, port, path })}
       />
     </article>
   </Layout>
