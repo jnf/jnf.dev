@@ -5,4 +5,5 @@ title: "Measuring the Human Impact of Software Best Practices: A Story of CSS an
 venue: "Abstractions"
 location: "Pittsburgh PA, USA"
 ---
-# hi
+
+![Measuring the Human Impact of Software Best Practices: A Story of CSS and Empathy](/static/2019-abstractions/001.jpeg)
