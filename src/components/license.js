@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 
 export const ContentLicense = ({ path = '#', title }) =>
   <div className='license-content'>
@@ -15,7 +16,7 @@ export const ContentLicense = ({ path = '#', title }) =>
     <a rel='license' href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>
       Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
     </a>.
-    <a href={path}>Based on this original work.</a>.
+    <Link to={path}>Based on this original work.</Link>
   </div>
 
 ContentLicense.propTypes = {

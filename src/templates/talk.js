@@ -7,10 +7,6 @@ import { ContentLicense } from '../components/license'
 
 export const pageQuery = graphql`
   query($path: String!) {
-    site {
-      host
-      port
-    }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
@@ -24,13 +20,8 @@ export const pageQuery = graphql`
   }
 `
 
-const urlBuilder = ({ host, path, port }) => port
-  ? `//${host}:${port}${path}`
-  : `//${host}${path}`
-
 const Template = ({
   data: {
-    site: { host, port },
     markdownRemark: {
       html,
       frontmatter: {
@@ -58,7 +49,7 @@ const Template = ({
       />
       <ContentLicense
         title={title}
-        path={urlBuilder({ host, port, path })}
+        path={path}
       />
     </article>
   </Layout>
