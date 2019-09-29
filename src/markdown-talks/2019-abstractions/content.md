@@ -6,9 +6,16 @@ venue: "Abstractions"
 location: "Pittsburgh PA, USA"
 ---
 
+## Author's Note
+_Hello! This talk was recorded, so once the video is released I'll post it here. This presentation made me nervous--more nervous than I'd anticipated--and I think it'll come through in the video. Still, it's an important topic and I'm grateful for the opportunity to share my perspective and experience. Everyone in Pittsburgh was lovely, and I had so many great conversations afterward and throughout the conference._
+
+_Thank you to all the organizers, volunteers, and sponsors for the opportunity. Thank you to the folks that attended this talk for listening. And thank you Bren for being my sounding board, collaborator, and editor. Yinz are the best._
+_-jnf, 20190929_
+
 ![Measuring the Human Impact of Software Best Practices: A Story of CSS and Empathy](./images/001.jpeg)
 
 ![content warning](./images/003.jpeg)
+This presentation includes discussion of the complexities of life in countries with challenged, if not collapsed, economies (primarily Venezuela). There are also several gifs and video files throughout. Most are of text transitions, but one gif feature some flashing colors. It's called out with a separate warning beforehand.
 
 ![text: an agenda. an 8 item list of emoji denoting the talk flow (👋🏼, ✨, 😓, 🚗, 🔬, 🧮, ⛰, ✌🏼)](./images/004.jpeg)
 
@@ -23,7 +30,7 @@ If you've ever attended one of my talks, you'll recognize the central theme here
 Today's presentation has both. Normally, I end with the message *Go Forth, and be Awesome*, because, ideally, my presentation has left you inspired and motivated to use your privilege to elevate others and/or dig into how the software you make affects the human relationships it touches. This time, I'd like to flip the script and lead with this closer.
 
 ![⛰emoji](./images/008.jpeg)
-You can, should, and are in some ways, obligated to use whatever privilege and leverage you have to elevate, promote, and otherwise help those around you. You exist at a specific moment in time and space in which you can affect great change, have tremendous impact. That feel heavy, because it is. But the good news is that there is so much that can be done, and little pebbles, fetched diligently, can move mountains. This talk is about one of the little pebbles, and the difference it's made.
+You **can**, **should**, and **are**, in some ways, **obligated** to use whatever privilege and leverage you have to elevate, promote, and otherwise help those around you. You exist at a specific moment in time and space in which you can affect great change, have tremendous impact. That feel heavy, because it is. But the good news is that there is so much that can be done, and little pebbles, fetched diligently, can move mountains. This talk is about one of the little pebbles, and the difference it's made.
 
 ![an animation that transforms the word microaggression into microaffiramtion](./images/009.gif)
 There are many wonderful, powerful people out there working every day to address inequity and injustice in our society. It's hard, thankless work. This talk isn't about them. It's about the rest of us. Fundamentally, this talk is about micro aggressions and microaffirmations.
@@ -39,7 +46,7 @@ Here's a relevant example. No matter your feelings on saying *you guys*, it's to
 This idea of replacing microaggressions with microaffirmations extends to software. There are microaggressions in your code. In your user profiles, in your assumptions, in your practices, best and otherwise.
 
 ![text: microaffirmations, a guide. i. active listening, ii. recognizing and validating experiences, iii. affirming emotional reactions](./images/012.jpeg)
-Fortunately, some really smart and kind folks over at Brown University published a guide to correcting a micro-aggression with a micro-affirmation.
+Fortunately, some really smart and kind folks over at Brown University [published a guide to correcting a micro-aggression with a micro-affirmation](https://www.brown.edu/sheridan/microaggressions-and-micro-affirmations-0).
 
 Active listening, which focuses on hearing clearly what is being shared, and demonstrated through eye contact, open body posture, summarizing statements, and/or asking qualifying questions to ensure understanding.
 
@@ -47,6 +54,7 @@ Recognizing and validating experiences involves elucidating the what, why, and h
 
 Affirming emotional reactions through verbal acknowledgement that they have experienced something exciting, frustrating, hurtful, etc. enables the conversation to focus on turning those feelings toward actions that will empower, heal, and/or foster learning.
 
+### Warning! Flashing Colors Below
 ![a gif showing the procedure by which a photograph of a busy city street is 'annotated' with geometric shapes representing the different kinds and classes of objects present](./images/014.gif)
 Let's set the stage. Mighty AI was a startup that provided training data as a service. Leveraging an open community, we could and can create large, high quality datasets intended for training and validating computer vision models, primarily in the autonomous vehicle space. Here's what it looks like. <play video>
 
@@ -93,27 +101,35 @@ That feels kinda vague—0 to 18 cents—so let’s get detailed. I want to show
 First some facts, then some process, and finally some math.
 
 ![every byte transferred from server to client costs 💰 + 🕐. screen shot showing Amazon Cloudfront pricing (first 10tb for $0.85) and Movistar's pricing (5Bss/Mb)](./images/026.gif)
+We pay AWS to store our bundles and deliver them, on demand, to users' browsers. Our users pay their ISP to download and deliver the data they've requested. So every byte is paid for at least twice, but the cost scales are nowhere near balanced. AWS charges us **eight cents** for **ten terabytes** of transfer out of the CDN. Movistar, a cellular data provider operating in Venezuela, charges **5 Bss** (the local currency--more on that in a moment) **per megabyte**. Knowing this, we can derive exactly what a user will _spend_ in order to _earn_ on our platform.
 
 ![J.G. is a Super 5, completed 1090 tasks in February 2019, and earned $72.10USD](./images/027.jpeg)
+So let's do that. JG is a Super5&mdash;a highly skilled and prolific annotator on our platform&mdash;living in Venezuela. During February 2019, JG completed 1,090 discrete tasks and earned $72.10USD.
 
 ![Spare5 is so cool, had 92 Rails production deploys in February, 9 of which involved CSS](./images/028.jpeg)
+Spare5 is our annotation platform. During the same month, we deployed the Rails backend 92 times. Nine of those deployments contained CSS changes.
 
 ![let's just talk about the week of February 11th 📆](./images/029.jpeg)
 1090 tasks and 92 deploys are still pretty big numbers, so let’s drill down even further, and visualize the work JG did during just one week in February.
 
 ![an animation showing the progression from sql query to results to ruby parsing script to csv](./images/030.gif)
+Here's the only code in my entire talk, and it's a truncated screenshot. To visualize the work JG completed, I...
+
+- wrote a database query that returned each unit of work JG completed, along with when and how much they earned.
+- then munged that through a Ruby script that grouped that time into _tasking sessions_, which I defined as consecutive work fifteen or fewer minutes between finishing one and starting the next.
+- then exported that to a CSV file structured to be imported to Google Calendar.
 
 ![screenshot of a google calendar for one week in February. Many 'tasking sessions' are shown as blocks of time](./images/031.jpeg)
-One week of tasking sessions, in a calendar view. Hashtag manager life. A session is a contiguous block of submitted tasks with less than 15 minutes between the end of one and the start of the next.
+And there you go. One week of tasking sessions, in a calendar view. Hashtag manager life. Likely imperfect but representative of how JG spent their tasking time.
 
 ![the same calendar screenshot, but blocks indicating production deploys have been added, showing that deploys often happen in the middle of tasking sessions](./images/032.jpeg)
-Overlay production application deploys (in pink), which, at the time, included the CSS bundle (cache busting). Same week, 13 deploys. Only 2 actually touched the CSS. Every green box after a red box is a time we forced JG to re-download the CSS bundle. Roughly 8-10 times.
+Using a similar approach, I can then overlay production deployments (in pink). At the time, these deployments included cache-busting the CSS bundle. During the same week, we had **13** deploys, of which only **2** contained actual CSS changes. Every green box after a pink box is a time we forced JG to re-download the CSS bundle, roughly 8-10 times.
 
-Most of the time, even though we forced a re-download, it was exactly the same code.
+Most of the time, even though we forced a re-download, it was _exactly the same CSS_.
 
 ![now the tasking session calendar blocks are overlaid with just two production deploys, representing the two deploys that affected the CSS](./images/033.jpeg)
-The code only changed twice, here, in blue.
-Conservatively six unnecessary downloads, or ~7.5mb of CSS J.G. isn’t going to use. For reference, the assets unique to a large task, assuming nothing cached, is about 2.5mb. So that’s three jobs we asked them to download (and pay for), for the privilege of using our application.
+The CSS only changed twice, here, in blue.
+Conservatively six unnecessary downloads, or **~7.5mb** of CSS JG isn’t going to use. For reference, the assets unique to a large task, assuming nothing cached, is about 2.5mb. So that’s three tasks we asked JG to download (and pay for), for the privilege of using our application.
 
 ![an animation showing a 🚗 moving to the center, followed the crossed-out text '1300 x 8', the crossed-out text '1300 x 2' and the highlighted text '34 x 2' ](./images/034.gif)
 Let’s connect it to our previous metaphor. During the week of 2/11. JG paid the CSS tax 8 times.
@@ -123,19 +139,26 @@ It should have been twice.
 And it should’ve been far, far less
 
 ![napkin maths: 8 cache-busting events at 1.3mb each if 10.4mb total for a cost of 52Bs. 2 cache-busting events at 33.8kb each is 0.676mb total for a cost of 0.34Bs.](./images/035.jpeg)
+JG paid 52Bs. when it could and should have been 0.34Bs. And, to reiterate, this is _just for CSS, the vast majority of which was redundant or unreferenced_. It's wholly unacceptable, especially given the volatility of the economy in Venezuela.
 
 ![Banknotes of 10,000, 20,000 and 50,000 bolivar denominations will begin circulating on June 13, 2019…The largest of those bank notes, equivalent to about US$8, is more than the minimum wage of 40,000 bolivars per month.](./images/036.jpeg)
-This is the second time in a year that the Venezuelan government has made a drastic change to their currency. One year ago yesterday, a new currency—the Bolívar Soberano—replaced the existing currency with a ratio of 100,000 to 1. The minimum wage at that time was 1,800 bolivars. It’s since increased to 40k, but the actual value has decreased. In USD, the minimum wage has fallen from about $8USD to less than $3.
+This is the second time in a year that the Venezuelan government has made a drastic change to their currency. One year ago yesterday _[Ed. note, that's 21 August 2019]_, a new currency—the Bolívar Soberano—replaced the existing currency with a ratio of 100,000 to 1. The minimum wage at that time was 1,800 bolivars. It’s since increased to 40,000, but the actual value (as measured by exchange rates and local buying power) has decreased. In USD, the minimum wage has fallen from about $8USD to less than $3 ([source](https://uk.reuters.com/article/venezuela-economy/venezuela-adds-bigger-bank-notes-due-to-hyperinflation-idUKL2N23J167)).
 
 ![A cup of coffee’s price has jumped to 9,000.00 bolivars from 25.00 bolivars over the past 12 months, an increase of 35,900 percent.](./images/037.jpeg)
+
+While unorthodox, [Bloomberg's "coffee index"](https://www.bloomberg.com/features/2016-venezuela-cafe-con-leche-index) is a very accessible and understandable look at hyperinflation.
 
 ![CSS won't save us. Inflation is in the tens-of-thousands percent. A cup of coffee is about 25% of a monthly minimum wage. 52Bs to download CSS is unacceptable. Is 0.34Bs. good enough?](./images/038.jpeg)
 
 ![⛰](./images/039.jpeg)
-With changing the what and when and how of our CSS deploys, we've taken one little pebble off the mountain our community faces. And that's how we move mountains, one little pebble at a time, all together. What's happening in Venezuela is so far out of our control, but we can still help. We can listen, recognize and validate the experiences shared, and then adapt our perspective and efforts to better include and honor those experiences.
-
-Getting our CSS under control benefits every single person using our application; keeping it under control shows we respect and value the people who's lived experiences differ from our own. Having that closer connection to our community and seeking microaffirmation opportunities makes me a better engineering leader. It helps me prioritize the right efforts by providing much more meaningful and tangible measures of impact. I would encourage you to do better than I did. Don't wait, don't assume. Seek out the disempowered folks in your product's communities. Don't assume you know what would best help them. Don't assume that your product backlog will solve their problems. Instead, reach out.
+With changing the what and when and how of our CSS deploys, we've taken one little pebble from the mountain our community faces. And that's how we move mountains, one little pebble at a time, all together. What's happening in Venezuela is so far out of our control, but we can still help. We can listen, recognize and validate the experiences shared, and then adapt our perspective and efforts to better include and honor those experiences.
 
 ![ask, listen, believe... and then act.](./images/040.gif)
 
+Getting our CSS under control benefits every single person using our application; keeping it under control shows we respect and value the people who's lived experiences differ from our own. Having that closer connection to our community and seeking microaffirmation opportunities makes me a better engineering leader. It helps me prioritize the right efforts by providing much more meaningful and tangible measures of impact. I would encourage you to do better than I did. Don't wait, don't assume. Seek out the disempowered folks in your product's communities. Don't assume you know what would best help them. Don't assume that your product backlog will solve their problems. Instead, reach out.
+
+_Ask, listen, believe. And then act._
+
+
 ![thank you ✌🏼](./images/041.jpeg)
+Thanks, friends. 💖
