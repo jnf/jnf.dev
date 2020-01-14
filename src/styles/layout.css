@@ -1,2 +1,71 @@
 @import "normalize.css";
 @import "gatsby.css";
+@import "fonts.css";
+
+body {
+  margin: 0 4rem 4rem 4rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+}
+
+main {
+  max-width: 96rem;
+}
+
+.talk {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.talk h1 {
+  font-family: charter;
+  width: 30%;
+  height: 100%;
+  position: sticky;
+  padding-top: 6rem;
+  top: 0;
+  left: 0;
+}
+
+.talk h1 > span {
+  font-family: charter;
+  display: block;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 0.4em;
+  margin: 0.22rem 0;
+}
+
+.talk h1 > span:first-of-type {
+  margin-top: 1rem;
+}
+
+.talk > .talk-content {
+  width: 60%;
+  padding-top: 6rem;
+}
+
+.talk-content h2 {
+  font-family: charter;
+  font-style: italic;
+  font-weight: normal;
+  text-decoration: underline;
+  margin: 0 0 1.45rem;
+}
+
+.talk-content em {
+  font-family: charter;
+}
+
+.talk > .license-content {
+
+}
+
+.talk > .license-content img {
+  margin: 0 0.22rem 0 0;
+}
