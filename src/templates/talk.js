@@ -37,19 +37,18 @@ const Template = ({
   <Layout>
     <Seo title={title} />
     <article className='talk'>
-      <h1>
-        {title}
-        <span className='talk-venue'>{venue}</span>
-        <span className='talk-location'>{location}</span>
-        <span className='talk-date'>{date}</span>
-      </h1>
+      <section className='talk-title'>
+        <h1>
+          {title}
+          <span className='talk-venue'>{venue}</span>
+          <span className='talk-location'>{location}</span>
+          <span className='talk-date'>{date}</span>
+        </h1>
+        <ContentLicense />
+      </section>
       <section
         className='talk-content'
         dangerouslySetInnerHTML={{ __html: html }}
-      />
-      <ContentLicense
-        title={title}
-        path={path}
       />
     </article>
   </Layout>
