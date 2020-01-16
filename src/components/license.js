@@ -4,10 +4,18 @@ export const ContentLicense = () =>
   <aside className='license-content'>
     This presentation by <a href='https://jnf.dev'>jnf</a> is licensed under a
     {' '}
-    <a rel='license' href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>
+    <a
+      rel='license noopener noreferrer'
+      href='http://creativecommons.org/licenses/by-nc-sa/4.0/'
+      target='_blank'
+    >
       Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
     </a>.
-    <a rel='license' href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>
+    <a
+      rel='license noopener noreferrer'
+      href='http://creativecommons.org/licenses/by-nc-sa/4.0/'
+      target='_blank'
+    >
       <img
         alt='Creative Commons License'
         src='https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png'
