@@ -6,6 +6,7 @@ venue: "Abstractions"
 location: "Pittsburgh PA, USA"
 redirect_from:
   - /abstractions
+  - /adiecon2020
 ---
 
 ## Author's Note
