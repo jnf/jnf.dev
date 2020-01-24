@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  color: rgb(38, 38, 38);
+}
+
+header {
+  border-top: 0.22rem solid #999;
+  height: 8rem;
+  width: 100%;
+  padding: 0 4rem;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+a,
+a:visited {
+  color: rgb(115, 63, 73);
+  border-bottom: 1px solid rgb(115, 63, 73);
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+a:hover,
+a:active {
+  color: rgb(217, 102, 123);
+  border-color: rgb(217, 102, 123);
+}
+
+main {
+  max-width: 96rem;
+  margin: 0 4rem;
+}
+
+footer {
+  margin: 2rem 4rem;
+}
