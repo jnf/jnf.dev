@@ -1,0 +1,20 @@
+.header-title {
+  display: flex;
+  align-items: center;
+}
+
+.header-avatar {
+  border: 1px solid rgb(115, 63, 73);
+  border-radius: 50%;
+  height: 6rem;
+  margin: 0 1.45rem 0 0;
+  transition: all 0.2s ease-in;
+}
+
+.header-link {
+  border: none;
+
+  &:hover .header-avatar {
+    border-color: rgb(217, 102, 123);
+  }
+}
