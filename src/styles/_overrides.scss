@@ -1,12 +1,12 @@
 /* overrides for small screens */
 @media only screen and (max-width : 900px) {
   // core styles
-  header { background: #fff; }
-  main { margin: 0 2rem; }
+  main {
+    flex-direction: column;
+    margin: 2rem;
+  }
 
-  // talk styles
-  .talk {
-    .talk-title { width: 100%; position: initial; }
-    .talk-content { width: 100%; padding-top: 2rem; }
+  header {
+    margin-bottom: 2rem;
   }
 }
