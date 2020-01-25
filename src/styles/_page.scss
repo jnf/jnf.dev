@@ -1,13 +1,14 @@
 .header-title {
-  display: flex;
   align-items: center;
+  display: flex;
+  font-size: 1.33rem;
 }
 
 .header-avatar {
-  border: 1px solid rgb(115, 63, 73);
+  border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 50%;
-  height: 6rem;
-  margin: 0 1.45rem 0 0;
+  height: 5.8rem;
+  margin: 0 1.4rem 0 0;
   transition: all 0.2s ease-in;
 }
 
