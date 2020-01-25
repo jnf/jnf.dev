@@ -15,6 +15,8 @@ _Hello! This talk was recorded, so once the video is released I'll post it here.
 _Thank you to all the organizers, volunteers, and sponsors for the opportunity. Thank you to the folks that attended this talk for listening. And thank you Bren for being my sounding board, collaborator, and editor. Yinz are the best._
 _-jnf, 20190929_
 
+___
+
 ![Measuring the Human Impact of Software Best Practices: A Story of CSS and Empathy](./images/001.jpeg)
 
 ![content warning](./images/003.jpeg)
