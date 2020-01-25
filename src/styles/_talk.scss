@@ -3,27 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.talk > .talk-title {
-  width: 30%;
-  height: 100%;
-  position: sticky;
-  padding-top: 8rem;
-  top: 0;
-  left: 0;
-
-  h1 > span {
-    display: block;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 0.8rem;
-    margin: 0.22rem 0;
-
-    &:first-of-type {
-      margin-top: 1rem;
-    }
-  }
+  max-width: 42rem;
 
   > .license-content {
     margin-top: 1rem;
@@ -39,27 +19,51 @@
   }
 }
 
+.talk > .talk-title {
+  margin-bottom: 3rem;
+
+  h1 {
+    font-size: 1.4rem;
+    width: 80%;
+  }
+
+  h1 > span {
+    display: block;
+    font-weight: normal;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+
+    &:first-of-type {
+      margin-top: 1rem;
+    }
+  }
+}
+
 .talk-content {
-  padding-top: 8rem;
-  max-width: 40rem;
-  width: 60%;
+  > hr {
+    margin: 2rem 0 5rem;
+  }
 
   > h2 {
-    border-bottom: 1px solid;
     display: inline-block;
     font-style: italic;
-    font-weight: normal;
-    margin: 0 0 1.45rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+  }
+
+  > p {
+    margin-bottom: 1rem;
   }
 
   > p > img {
     display: block;
-    margin: 1rem auto;
-    width: 100%;
-    max-width: 40rem;
+    margin: 2rem auto 3rem;
+    width: 75%;
   }
 
   > p > .gatsby-resp-image-wrapper {
-    margin-bottom: 1rem;
+    margin: 2rem 0 3rem;
+    max-width: 75% !important;
   }
 }
