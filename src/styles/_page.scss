@@ -19,3 +19,28 @@
     border-color: rgb(217, 102, 123);
   }
 }
+
+.links-icon {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0 1rem 0 0;
+  }
+
+  &.twitter::before {
+    background: url(../images/twitter.svg) no-repeat center;
+  }
+
+  &.github::before {
+    background: url(../images/github.svg) no-repeat center;
+  }
+
+  &.linkedin::before {
+    background: url(../images/linkedin.svg) no-repeat center;
+  }
+}
