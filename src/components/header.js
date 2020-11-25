@@ -1,6 +1,8 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+
+import { Navigation } from '../components/nav'
 import jnfImage from '../images/jnf.jpg'
 
 const Header = ({ siteTitle }) => (
@@ -15,6 +17,7 @@ const Header = ({ siteTitle }) => (
         {siteTitle}
       </h1>
     </Link>
+    <Navigation />
   </header>
 )
 

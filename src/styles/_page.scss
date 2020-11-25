@@ -20,27 +20,25 @@
   }
 }
 
-.links-icon {
+.links-connect {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+}
 
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 1.3rem;
-    height: 1.3rem;
-    margin: 0 1rem 0 0;
-  }
+.links-connect__link {
+  margin: 0 1.45rem 0 0;
+  border: none;
 
-  &.twitter::before {
-    background: url(../images/twitter.svg) no-repeat center;
+  &:hover .links-connect__icon {
+    border-color: rgb(217, 102, 123);
   }
+}
 
-  &.github::before {
-    background: url(../images/github.svg) no-repeat center;
-  }
-
-  &.linkedin::before {
-    background: url(../images/linkedin.svg) no-repeat center;
-  }
+.links-connect__icon {
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  height: 2rem;
+  transition: all 0.2s ease-in;
 }
