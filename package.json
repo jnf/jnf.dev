@@ -3,7 +3,7 @@
   "private": true,
   "description": "static generator for jnf.dev",
   "version": "0.0.0",
-  "author": "jnf <jnf@has-many.com>",
+  "author": "jnf <hi@jnf.dev>",
   "dependencies": {
     "gatsby": "^2.27.3",
     "gatsby-image": "^2.6.0",
