@@ -26,7 +26,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/markdown-talks`,
+        path: `${__dirname}/src/content`,
       },
     },
     {
@@ -36,7 +36,10 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
+              linkImagesToOriginal: false,
+              markdownCaptions: true,
               maxWidth: 800,
+              showCaptions: true,
             },
           },
           'gatsby-remark-static-images'
