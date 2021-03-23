@@ -35,14 +35,16 @@ export const Navigation = () => {
     return acc
   }, {})
 
+  const categories = Object.keys(navs).sort()
+
   return (
     <aside>
       <nav className='links'>
-        {Object.entries(navs).map(([category, entries]) =>
+        {categories.map(category =>
           <>
             <h4>{category}</h4>
             <ul>
-              {entries.map(({ title, venue, date, location, slug }) =>
+              {navs[category].map(({ title, venue, date, location, slug }) =>
                 <li key={slug}>
                   <Link to={slug} replace>{title}</Link>
                   <small style={{ display: 'block' }}>
