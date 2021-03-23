@@ -5,7 +5,7 @@ title: "Practical Divination for Management"
 category: "Essays"
 ---
 
-Hi friends. I want to share one of my more controversial management techniques with you: **divination**. It's a visualization technique, a framework of using the lens of the present to examine the past to understand the future. I believe in divination, especially as tool for aligning my intellect and emotions. Whether or not you believe in any kind of spiritual divination is secondary to the fact that it's a simple and effective diagnostic tool for deep thinking.
+Hi friends. I want to share one of my more controversial engineering management techniques with you: **divination**. It's a visualization technique, a framework of using the lens of the present to examine the past to understand the future. I believe in divination, especially as tool for aligning my intellect and emotions. Whether or not you believe in any kind of spiritual component to divination is secondary to the fact that it's an effective triage tool for deep thinking and planning.
 
 ![The Botanica Tarot (major Arcana) by [Kevin Jay Stanton](https://www.patreon.com/kevinjaystanton). The cards are in a loose pile, face down, on a wood table. Three cards are face up in a row above the pile. They are **Strength**, **The High Priestess**, and **The Hierophant**. ](./images/001.jpeg)
 
@@ -23,9 +23,9 @@ That's it. The only rule of divination is that you must tell the **truth** as yo
 
 Now, **With Your Shield On It** is a fancy deck, but the process works fine with any collection of cards. The important thing is to have _variables_. Some differences in the cards that will encourage your brain to do that pattern-finding thing. Three is a powerful number, so with any three card draw I am looking for three kinds of variables.
 
-Here's what I'm hoping is a very accessible example. Let's consider this ordinary pack of playing cards (actually [this is an extraordianry pack of playing cards](https://www.studioonfire.com/store/artisan-playing-cards)). For the story of this draw, I find three variables (suit, color, and value) for consideration.
+Here's what I'm hoping is a very accessible example. Let's consider this ordinary pack of playing cards (actually [this is an extraordianry pack of playing cards](https://www.studioonfire.com/store/artisan-playing-cards)). For the story of this draw, I find three variables (suit, facing, and value) for consideration.
 
-![Ordinary playing cards. The **Ace of Spades**, **Three of Spades**, and **Nine of Clubs** are dealt in a neat row above the deck. Designed by Simon Frouws and produced by theory11. [Printed by Studio On Fire](https://www.studioonfire.com/store/artisan-playing-cards)](./images/004.jpeg)
+![Ordinary playing cards. The **Ace of Spades**, **Three of Spades**, and **Nine of Clubs** sit in a neat row above the deck.](./images/004.jpeg)
 
 These cards are telling a story of growing problems, a garden out of control. Notice the meticulous nature of the Ace of Spades. It's detailed and singular, reminding me of all my grand plans in the past, and how earnest I was in my belief that everything would be work out if I kept focused. Later, I recruit others to my plans. The one becomes three (a powerful number, I keep mentioning). A team (or coven) in place, and the plan is intact.
 
@@ -33,6 +33,6 @@ Let's pause. This is where I am now. Does it match my situation? At first, I tho
 
 The nine of clubs warns me of a garden overgrown. Exponentially increasing concerns, orderly spades turned unruly clubs. I need to step back, regroup, reconsider, realign before things spin out of control.
 
-That's it! My brain is focused; I can think deeply on what's really troubling me. I'm clearly very unsure about my team's roadmap, and it probably has something to do with the team composition. This example is only lightly contrived; I'm scribbling thoughts as fast as I can to capture the essence of my divination. You don't need a fancy deck of mysterious cards--though that is both lovely and gratifying--to get started. Find something accessible, some cards or dice or tea leaves that speak to you, and give it a try. Let me know how it goes for you.
+That's it! My brain is focused; I can think deeply on what's really troubling me. I'm clearly unsure about my team's roadmap, and it probably has something to do with the team composition (that one spade facing away--what are you trying to tell me?). This example is only lightly contrived; I scribbled thoughts as fast as I could to capture the essence of my divination. You don't need a fancy deck of mysterious cards--though that is both lovely and gratifying--to get started. Find something accessible, some cards or dice or tea leaves that speak to you, and give it a try. Let me know how it goes.
 
 Ok friends, that's all I've got. Take care, talk soon, and stay safe. 💕
