@@ -20,7 +20,7 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'jnf.dev',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/jnf.dev-icon.png', // This path is relative to the root of the site.
       },
     },
     {
