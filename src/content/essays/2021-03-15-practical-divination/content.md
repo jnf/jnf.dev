@@ -2,7 +2,7 @@
 path: "/essays/2021/03/15/practical-divination-for-management"
 date: "2021-03-15"
 title: "Practical Divination for Management"
-category: "essays"
+category: "Essays"
 ---
 
 Hi friends. I want to share one of my more controversial management techniques with you: **divination**. It's a visualization technique, a framework of using the lens of the present to examine the past to understand the future. I believe in divination, especially as tool for aligning my intellect and emotions. Whether or not you believe in any kind of spiritual divination is secondary to the fact that it's a simple and effective diagnostic tool for deep thinking.

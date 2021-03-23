@@ -4,7 +4,7 @@ date: "2019-08-21"
 title: "Measuring the Human Impact of Software Best Practices: A Story of CSS and Empathy"
 venue: "Abstractions"
 location: "Pittsburgh PA, USA"
-category: "presentations"
+category: "Presentations"
 redirect_from:
   - /abstractions
   - /adiecon2020

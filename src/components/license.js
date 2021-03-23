@@ -2,7 +2,7 @@ import React from 'react'
 
 export const ContentLicense = () =>
   <aside className='license-content'>
-    This presentation by <a href='https://jnf.dev'>jnf</a> is licensed under a
+    This content by <a href='https://jnf.dev'>jnf</a> is licensed under a
     {' '}
     <a
       rel='license noopener noreferrer'

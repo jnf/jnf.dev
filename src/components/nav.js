@@ -15,6 +15,7 @@ export const Navigation = () => {
               slug
             }
             frontmatter {
+              category
               title
               venue
               date(formatString: "DD MMMM YYYY")
@@ -26,29 +27,32 @@ export const Navigation = () => {
     }
   `)
 
-  const talks = allMarkdownRemark.edges.reduce((acc, { node: { frontmatter, fields } }) => ([
-    ...acc,
-    [frontmatter, fields.slug]
-  ]), [])
+  const navs = allMarkdownRemark.edges.reduce((acc, { node: { frontmatter, fields } }) => {
+    const { category, title, venue, date, location } = frontmatter
+    const { slug } = fields
+    acc[category] = (acc[category] || [])
+    acc[category].push({ title, venue, date, location, slug })
+    return acc
+  }, {})
 
   return (
     <aside>
       <nav className='links'>
-        <h4>Pages</h4>
-        <ul>
-          <li><Link to='/' replace>Home</Link></li>
-        </ul>
-      </nav>
-      <nav className='links'>
-        <h4>Presentations</h4>
-        <ul>
-          {talks.map(([{ title, venue, date, location }, path]) =>
-            <li key={path}>
-              <Link to={path} replace>{title}</Link>
-              <small style={{ display: 'block' }}>{venue}, {location}, {date}</small>
-            </li>
-          )}
-        </ul>
+        {Object.entries(navs).map(([category, entries]) =>
+          <>
+            <h4>{category}</h4>
+            <ul>
+              {entries.map(({ title, venue, date, location, slug }) =>
+                <li key={slug}>
+                  <Link to={slug} replace>{title}</Link>
+                  <small style={{ display: 'block' }}>
+                    {venue && location && `${venue}, ${location}, `}{date}
+                  </small>
+                </li>
+              )}
+            </ul>
+          </>
+        )}
       </nav>
       <nav className='links'>
         <h4>Connect</h4>
