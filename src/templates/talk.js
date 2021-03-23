@@ -40,7 +40,7 @@ const Template = ({
       <section className='talk-title'>
         <h1>
           {title}
-          <span><em>{venue}</em> || {location}</span>
+          {venue && location && <span><em>{venue}</em> || {location}</span>}
           <span>{date}</span>
         </h1>
       </section>
