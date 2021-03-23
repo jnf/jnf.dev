@@ -41,7 +41,7 @@ export const Navigation = () => {
     <aside>
       <nav className='links'>
         {categories.map(category =>
-          <>
+          <React.Fragment key={`links-category-${category}`}>
             <h4>{category}</h4>
             <ul>
               {navs[category].map(({ title, venue, date, location, slug }) =>
@@ -53,7 +53,7 @@ export const Navigation = () => {
                 </li>
               )}
             </ul>
-          </>
+          </React.Fragment>
         )}
       </nav>
       <nav className='links'>

@@ -53,7 +53,7 @@ const Template = ({
   </Layout>
 
 Template.propTypes = {
-  data: PropTypes.node.isRequired
+  data: PropTypes.object.isRequired
 }
 
 export default Template
