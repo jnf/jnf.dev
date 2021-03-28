@@ -2,6 +2,7 @@
   h2 {
     display: block;
     font-size: 1.4rem;
+    margin-top: 2rem;
 
     &::after {
       content: '';
@@ -24,5 +25,11 @@
     li {
       margin-bottom: calc(1.45rem / 6);
     }
+  }
+
+  hr {
+    background: #ddd;
+    margin: 1.45rem auto;
+    width: 66%;
   }
 }

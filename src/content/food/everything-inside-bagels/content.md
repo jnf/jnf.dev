@@ -81,4 +81,7 @@ Except it's not. I began experimenting with these as an alternative to tradition
    
 ---
 1. Put bagels in the center of oven and reduce temperatures to **400°F**.
-2. Bake for **18-22 minutes**, until golden on top or internal temp registers at least **190°F**. Cool on wire rack.
+2. Bake for **18-22 minutes**, until golden on top or internal temp registers at least **190°F**.
+3. Remove from oven and transfer to wire rack to cool.
+
+---
