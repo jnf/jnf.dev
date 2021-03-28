@@ -10,6 +10,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
+        category
         date(formatString: "DD MMMM YYYY")
         location
         path
@@ -25,6 +26,7 @@ const Template = ({
     markdownRemark: {
       html,
       frontmatter: {
+        category,
         date,
         location,
         path,
@@ -36,7 +38,7 @@ const Template = ({
 }) =>
   <Layout>
     <Seo title={title} />
-    <article className='talk'>
+    <article className={`${category.toLowerCase()} talk`}>
       <section className='talk-title'>
         <h1>
           {title}
