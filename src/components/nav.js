@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 
 import twitterIcon from '../images/twitter.svg'
@@ -37,13 +37,18 @@ export const Navigation = () => {
 
   const categories = Object.keys(navs).sort()
 
+  const [visible, setVisible] = useState(false)
+
   return (
     <aside>
-      <nav className='links'>
+      <button onClick={() => setVisible(!visible)} className='links-toggle'>
+        toggle site navigation
+      </button>
+      <nav className={`links ${visible ? 'visible' : ''}`}>
         {categories.map(category =>
           <React.Fragment key={`links-category-${category}`}>
-            <h4>{category}</h4>
-            <ul>
+            <h4 className='links-category-title'>{category}</h4>
+            <ul className='links-category-list'>
               {navs[category].map(({ title, venue, date, location, slug }) =>
                 <li key={slug}>
                   <Link to={slug} replace>{title}</Link>
@@ -56,7 +61,7 @@ export const Navigation = () => {
           </React.Fragment>
         )}
       </nav>
-      <nav className='links'>
+      <nav className='links-social'>
         <h4>Connect</h4>
         <ul className='links-connect'>
           {

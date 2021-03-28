@@ -8,5 +8,23 @@
 
   header {
     margin-bottom: 2rem;
+
+    .links-toggle {
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid #733f49;
+      color: #733f49;
+      display: block;
+      padding: 0;
+      margin-bottom: calc(1.45rem / 3);
+    }
+
+    .links {
+      display: none;
+
+      &.visible {
+        display: block;
+      }
+    }
   }
 }
