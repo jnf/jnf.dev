@@ -4,6 +4,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 import twitterIcon from '../images/twitter.svg'
 import githubIcon from '../images/github.svg'
 import linkedinIcon from '../images/linkedin.svg'
+import discogsIcon from '../images/discogs.svg'
 
 export const Navigation = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
@@ -68,6 +69,7 @@ export const Navigation = () => {
             Object.entries({
               Twitter: ['https://twitter.com/_jnf', twitterIcon],
               Github: ['https://www.github.com/jnf/', githubIcon],
+              Discogs: ['https://www.discogs.com/user/jnf', discogsIcon],
               LinkedIn: ['https://www.linkedin.com/in/-jnf/', linkedinIcon],
             }).map(([service, [href, icon]]) =>
               <li key={`link-${service}`}>
