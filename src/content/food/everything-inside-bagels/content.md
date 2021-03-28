@@ -1,0 +1,84 @@
+---
+path: "/food/2021/03/28/everything-inside-bagels"
+date: "2021-03-28"
+title: "Everything Inside Bagels"
+category: "Food"
+version: "1.1.1"
+---
+
+_**Author's note:** There are some definite, obvious **TODOs** here still, but they're notes on searchable processes (like shaping a bagel). Hopefully that doesn't inhibit you from giving this recipe a try. It makes a damn tasty bagel._
+
+This Frankenstein's recipe is centered on combining the lovely flavor of a good everything bagel with a sourdough tang and a bit of natural sweetness from whole wheat flour. It's... kind of a mess.
+
+Except it's not. I began experimenting with these as an alternative to traditional everything bagels where the outside is crusted with salt, sesame seeds, and dried onion and garlic. It trades the texture and crunch of the everything-outside bagel for something that's less of a mess on the counter and when eating. In this version, I swap store-bought "everything seasoning" for my own mix. I did this so I could experiment with the flavor profile and texture without messing up my salt balance.
+
+**CAUTION!** You could exclude the everything seasoning described here and still have a tasty bagel. However, please be careful replacing the mix described here with a pre-mixed/store-bought seasoning; there's a good chance it has additional salt in it that would through the dough out of balance, ruining the bagels.
+
+## Equipment
+### For the bagels:
+- Large bowl
+- Large whisk
+- Bench knife
+- Baking sheet(s)
+- Digital scale
+- Wire rack
+- Parchment paper for lining baking sheet
+- Plastic wrap
+- Semolina or rice flour (not for baking, but for dusting the baking sheet)
+
+### For the parboil:
+- Large pot
+- Slotted spoon
+
+## Weights & Measures, per dozen bagels
+### For the bagels:
+- 300g active 100% hydration sourdough starter
+- 475g cold water
+- 20g malt syrup or molasses
+- 1kg all-purpose flour
+- 125g whole wheat flour
+- 5g [whole-grain bread improver](https://shop.kingarthurbaking.com/items/whole-grain-bread-improver-12-oz) (optional)
+- 15g salt
+
+### For the Everything Seasoning:
+- 20g white sesame seeds 
+- 20g black sesame seeds
+- 25g dried minced garlic
+- 15g dried minced onion
+- 10g poppy seeds
+
+### For the parboil:
+- 1 tablespoon baking soda
+- 1 tablespoon brown sugar
+
+## Day 1
+1. In a large bowl, whisk **300g starter**, **475g water**, and **20g malt syrup** until frothy.
+1. Add flours and seasonings:
+     - **125g whole wheat flour**
+     - **5g whole-grain bread improver** (optional)
+     - **1kg all purpose flour**
+     - **15g salt**
+     - **All of the Everything Seasoning**
+2. Mix and knead by hand until smooth & pliable (**~7 minutes**). This is a very thick, stiff dough, so I don't bother with a mixer; just mix and knead by hand. It's a workout.
+3. Shape into ball, cover with towel, **rest 20 minutes**.
+
+---
+1. Divide into 12 equal pieces (**~167g each**), shape each into ball. Cover and **rest 15 minutes**.
+
+---
+
+1. Line baking sheet(s) with parchment paper and generously sprinkle with semolina or rice flour.
+1. Make the bagel shape with each ball of dough. Place on lined baking sheet(s). _TODO: Describe how to shape bagels_
+1. Cover baking sheet(s) and let them proof for **3-4 hours**. Start doing float tests after ~3 hours. _TODO: Describe float test_
+1. Once a bagel passes the float test, cover the baking sheet(s) with plastic wrap, and proof in the fridge for _at least 12 hours_, up to 24 hours. Longer is better.
+
+## Day 2
+1. Preheat oven to **450°F**.
+1. Bring a large pot of water to a rolling boil, then add **1tbsp baking soda** and **1tbsp brown sugar**
+1. Remove bagels from fridge. Drop into boiling water, a couple at a time, for **~20 seconds** on each side.
+1. Remove bagels with a slotted spoon. Shake off excess water.
+1. Return to baking sheet(s)
+   
+---
+1. Put bagels in the center of oven and reduce temperatures to **400°F**.
+2. Bake for **18-22 minutes**, until golden on top or internal temp registers at least **190°F**. Cool on wire rack.
