@@ -62,7 +62,7 @@ Affirming emotional reactions through verbal acknowledgement that they have expe
 
 ### Warning! Flashing Colors Below
 ![a gif showing the procedure by which a photograph of a busy city street is ’annotated’ with geometric shapes representing the different kinds and classes of objects present](./images/014.gif)
-Let’s set the stage. Mighty AI was a startup that provided training data as a service. Leveraging an open community, we could and can create large, high quality datasets intended for training and validating computer vision models, primarily in the autonomous vehicle space. Here’s what it looks like. <play video>
+Let’s set the stage. Mighty AI was a startup that provided training data as a service. Leveraging an open community, we could and can create large, high quality datasets intended for training and validating computer vision models, primarily in the autonomous vehicle space. Here’s what it looks like.
 
 My team creates and maintains the suite of web-based tools that make what you just saw possible. Those piece-meal segmentations were captured in a series of discrete tasks, independently verified, and combined to create the final instance or semantic segmentations. We pay per task, usually between one and three cents. It takes a fair amount of code to do this. And, because it’s the browser, the code is JavaScript, HTML, and CSS.
 

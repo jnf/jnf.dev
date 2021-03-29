@@ -1,14 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from './page'
 import Seo from '../components/seo'
 import { ContentLicense } from '../components/license'
 
 export const pageQuery = graphql`
   query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
+    mdx(frontmatter: { path: { eq: $path } }) {
+      body
       frontmatter {
         category
         date(formatString: "DD MMMM YYYY")
@@ -23,8 +24,8 @@ export const pageQuery = graphql`
 
 const Template = ({
   data: {
-    markdownRemark: {
-      html,
+    mdx: {
+      body,
       frontmatter: {
         category,
         date,
@@ -46,10 +47,9 @@ const Template = ({
           <span>{date}</span>
         </h1>
       </section>
-      <section
-        className='talk-content'
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+      <section className='talk-content'>
+        <MDXRenderer>{body}</MDXRenderer>
+      </section>
       <ContentLicense />
     </article>
   </Layout>

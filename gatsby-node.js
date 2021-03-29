@@ -2,7 +2,7 @@ const path = require('path')
 
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === 'MarkdownRemark') {
+  if (node.internal.type === 'Mdx') {
     createNodeField({
       node,
       name: 'slug',
@@ -16,7 +16,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const talkTemplate = path.resolve('src/templates/talk.js')
   const result = await graphql(`
     {
-      allMarkdownRemark(
+      allMdx(
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
       ) {
@@ -37,7 +37,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  result.data.allMdx.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
       component: talkTemplate,

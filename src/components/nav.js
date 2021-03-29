@@ -7,9 +7,9 @@ import linkedinIcon from '../images/linkedin.svg'
 import discogsIcon from '../images/discogs.svg'
 
 export const Navigation = () => {
-  const { allMarkdownRemark } = useStaticQuery(graphql`
+  const { allMdx } = useStaticQuery(graphql`
     {
-      allMarkdownRemark {
+      allMdx {
         edges {
           node {
             fields {
@@ -28,7 +28,7 @@ export const Navigation = () => {
     }
   `)
 
-  const navs = allMarkdownRemark.edges.reduce((acc, { node: { frontmatter, fields } }) => {
+  const navs = allMdx.edges.reduce((acc, { node: { frontmatter, fields } }) => {
     const { category, title, venue, date, location } = frontmatter
     const { slug } = fields
     acc[category] = (acc[category] || [])
