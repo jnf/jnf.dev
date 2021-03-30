@@ -38,9 +38,9 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               linkImagesToOriginal: false,
-              markdownCaptions: true,
+              markdownCaptions: false,
               maxWidth: 800,
-              showCaptions: true,
+              showCaptions: false,
             },
           },
           'gatsby-remark-static-images'
