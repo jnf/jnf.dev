@@ -11,6 +11,14 @@ exports.onCreateNode = ({ node, actions }) => {
   }
 }
 
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      modules: [path.resolve(__dirname, 'src'), 'node_modules']
+    }
+  })
+}
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
   const talkTemplate = path.resolve('src/templates/talk.js')
