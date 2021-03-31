@@ -43,8 +43,8 @@ export const Navigation = () => {
       <nav className={`links ${visible ? 'visible' : ''}`}>
         {categories.map(category =>
           <React.Fragment key={`links-category-${category}`}>
-            <h4 className='links-category-title'>{category}</h4>
-            <ul className='links-category-list'>
+            <h4 className='links-category--title'>{category}</h4>
+            <ul className='links-category--list'>
               {navs[category].map(({ title, venue, date, location, slug }) =>
                 <li key={slug}>
                   <Link to={slug} replace>{title}</Link>
