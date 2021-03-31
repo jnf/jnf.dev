@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { Navigation } from '../components/nav'
+import { Navigation } from '../components/Navigation'
 import { Connect } from '../components/Connect'
 import jnfImage from '../images/jnf.jpg'
 
