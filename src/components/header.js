@@ -3,23 +3,25 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import { Navigation } from '../components/nav'
+import { Connect } from '../components/Connect'
 import jnfImage from '../images/jnf.jpg'
 
-const Header = ({ siteTitle }) => (
-  <header>
-    <Link to='/' className='header-link'>
-      <h1 className='header-title'>
+const Header = ({ siteTitle }) =>
+  <div className='site-sidebar'>
+    <header className='site-sidebar--header'>
+      <Link to='/' className='site-sidebar--header__avatar'>
         <img
           src={jnfImage}
-          className='header-avatar'
-          alt='photo of jnf looking all snazzy'
+          alt='cute photo of jnf'
         />
-        {siteTitle}
-      </h1>
-    </Link>
-    <Navigation />
-  </header>
-)
+      </Link>
+      <Link to='/' className='site-sidebar--header__title'>
+        <h1>{siteTitle}</h1>
+      </Link>
+      <Connect />
+    </header>
+    <div className='site-sidebar--header__nav'><Navigation /></div>
+  </div>
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
