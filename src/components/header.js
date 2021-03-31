@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) =>
       </Link>
       <Connect />
     </header>
-    <div className='site-sidebar--header__nav'><Navigation /></div>
+    <div className='site-sidebar--nav'><Navigation /></div>
   </div>
 
 Header.propTypes = {
