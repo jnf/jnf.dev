@@ -1,36 +1,85 @@
-.header-title {
+.site {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "site-sidebar site-primary";
+}
+
+.site-primary {
+  grid-area: site-primary;
+}
+
+.site-sidebar {
+  align-items: start;
+  display: grid;
+  grid-template-columns: min-content;
+  grid-template-rows: min-content;
+  gap: 1rem 1rem;
+  grid-template-areas:
+    "site-sidebar--header"
+    "site-sidebar--nav";
+  grid-area: site-sidebar;
+}
+
+.site-sidebar--nav {
+  grid-area: site-sidebar--nav;
+}
+
+.site-sidebar--header {
   align-items: center;
-  display: flex;
-  font-size: 1.33rem;
+  display: grid;
+  grid-template-columns: 6rem min-content;
+  grid-template-rows: min-content min-content;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header__avatar header__title"
+    "header__avatar header__connect";
+  grid-area: site-sidebar--header;
 }
 
-.header-avatar {
-  border: 1px solid rgba(0, 0, 0, 0);
-  border-radius: 50%;
-  height: 5.8rem;
-  margin: 0 1.4rem 0 0;
-  transition: all 0.2s ease-in;
-}
-
-.header-link {
+.site-sidebar--header__avatar {
+  align-self: start;
   border: none;
-  margin-bottom: 1rem;
+  grid-area: header__avatar;
+  margin: 0 1rem 0 0;
 
-  &:hover .header-avatar {
-    border-color: rgb(217, 102, 123);
+  img {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    margin: 0;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      border-color: rgb(217, 102, 123);
+    }
   }
+}
+
+.site-sidebar--header__title {
+  border: none;
+  grid-area: header__title;
+
+  h1 {
+    font-size: 1.33rem;
+  }
+}
+
+.site-sidebar--header__connect {
+  grid-area: header__connect;
 }
 
 .links-toggle {
   display: none;
 }
 
-.links-category-title {
+.links-category--title {
   font-size: 1.1rem;
   margin-bottom: calc(1.45rem / 3);
 }
 
-.links-category-list {
+.links-category--list {
   font-size: 0.9rem;
   margin-bottom: 0;
   width: 80%;
@@ -39,12 +88,14 @@
 .links-connect {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   list-style: none;
+  margin: 0;
+  width: 10rem;
 }
 
 .links-connect__link {
-  margin: 0 1.45rem 0 0;
+  margin: 0;
   border: none;
 
   &:hover .links-connect__icon {
