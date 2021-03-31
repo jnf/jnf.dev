@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <main>
+    <main className='site'>
       <Header siteTitle={data.site.siteMetadata.title} />
       {children}
     </main>

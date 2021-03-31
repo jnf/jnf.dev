@@ -39,7 +39,7 @@ const Template = ({
 }) =>
   <Layout>
     <Seo title={title} />
-    <article className={`${category.toLowerCase()} talk`}>
+    <article className={`site-primary ${category.toLowerCase()} talk`}>
       <section className='talk-title'>
         <h1>
           {title}

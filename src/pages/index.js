@@ -7,7 +7,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title='jnf.dev: where jnf talks about dev' />
-      <article className='static-page'>
+      <article className='site-primary'>
         <section>
           <h2>Hello</h2>
           <p>
