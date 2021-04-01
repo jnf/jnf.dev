@@ -12,6 +12,7 @@ export const pageQuery = graphql`
       frontmatter {
         category
         date(formatString: "DD MMMM YYYY")
+        description
         location
         path
         title
@@ -29,15 +30,15 @@ const Template = ({
         category,
         date,
         location,
-        path,
         title,
         venue,
+        description,
       }
     }
   }
 }) =>
   <Layout>
-    <Seo title={title} />
+    <Seo title={title} description={description} />
     <article className={`site-primary ${category.toLowerCase()} talk`}>
       <section className='talk-title'>
         <h1>
