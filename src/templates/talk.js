@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from './page'
 import Seo from '../components/seo'
-import { ContentLicense } from '../components/license'
+import { Footer } from '../components/Footer'
 
 export const pageQuery = graphql`
   query($path: String!) {
@@ -50,7 +50,7 @@ const Template = ({
       <section className='talk-content'>
         <MDXRenderer>{body}</MDXRenderer>
       </section>
-      <ContentLicense />
+      <Footer />
     </article>
   </Layout>
 
