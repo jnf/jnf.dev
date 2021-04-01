@@ -4,7 +4,8 @@
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-template-areas:
-    "site-sidebar site-primary";
+    "site-sidebar site-primary"
+    "site-footer site-footer";
   margin: 5rem auto;
   max-width: 68rem;
   }
@@ -12,6 +13,29 @@
 .site-primary {
   grid-area: site-primary;
   padding: 0 1rem;
+}
+
+.site-footer {
+  font-style: italic;
+  font-size: 0.8rem;
+  grid-area: site-footer;
+  margin: 1rem 0 2rem;
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+.site-footer--licensing {
+  margin-top: 1rem;
+  line-height: 1.44;
+
+  img {
+    display: inline-block;
+    margin: 0 0.2rem;
+    height: 1rem;
+  }
 }
 
 .site-sidebar {
@@ -112,17 +136,4 @@
   border-radius: 50%;
   height: 2rem;
   transition: all 0.2s ease-in;
-}
-
-.license-content {
-  margin-top: 1rem;
-  font-style: italic;
-  font-size: 0.8rem;
-  line-height: 1.44;
-}
-
-.license-content img {
-  display: block;
-  margin-top: 0.44rem;
-  height: 1rem;
 }
