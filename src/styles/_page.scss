@@ -5,10 +5,13 @@
   grid-template-rows: auto;
   grid-template-areas:
     "site-sidebar site-primary";
-}
+  margin: 5rem auto;
+  max-width: 68rem;
+  }
 
 .site-primary {
   grid-area: site-primary;
+  padding: 0 1rem;
 }
 
 .site-sidebar {
@@ -21,6 +24,7 @@
     "site-sidebar--header"
     "site-sidebar--nav";
   grid-area: site-sidebar;
+  padding: 0 1rem;
 }
 
 .site-sidebar--nav {

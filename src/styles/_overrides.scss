@@ -1,23 +1,31 @@
 /* overrides for small screens */
-@media only screen and (max-width : 900px) {
-  // core styles
-  main {
-    flex-direction: column;
+@media only screen and (max-width : 1024px) {
+  .site {
+    grid-template-areas:
+      "site-sidebar"
+      "site-primary";
     margin: 2rem;
   }
 
-  header {
-    margin-bottom: 2rem;
+  .links-toggle {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #733f49;
+    color: #733f49;
+    display: block;
+    padding: 0;
+    margin-bottom: calc(1.45rem / 3);
 
-    .links-toggle {
-      background: transparent;
-      border: 0;
-      border-bottom: 1px solid #733f49;
-      color: #733f49;
-      display: block;
-      padding: 0;
-      margin-bottom: calc(1.45rem / 3);
+    &:focus,
+    &:active {
+      border-color: rgb(217, 102, 123);
+      color: rgb(217, 102, 123);
     }
+  }
+
+  .site-sidebar {
+    margin-bottom: 2rem;
+    padding: 0;
 
     .links {
       display: none;
@@ -26,5 +34,9 @@
         display: block;
       }
     }
+  }
+
+  .site-primary {
+    padding: 0;
   }
 }
