@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from './page'
-import Seo from '../components/seo'
+import Seo from '../components/Seo'
 
 export const pageQuery = graphql`
   query($path: String!) {
