@@ -1,12 +1,22 @@
 import React from 'react'
 
-const Footer = () => (
-  <footer>
-    © {new Date().getFullYear()}, Built with {' '}
-    <a href='https://www.gatsbyjs.org' target='_blank' rel='noopener noreferrer'>
-      Gatsby
-    </a>
-  </footer>
-)
+import { OffsiteLink } from 'components/OffsiteLink'
 
-export default Footer
+export const Footer = () =>
+  <footer className='license-content'>
+    This content by <a href='https://jnf.dev'>jnf</a> is licensed under a {' '}
+    <OffsiteLink href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>
+      Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+    </OffsiteLink>.
+    <OffsiteLink href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>
+      <img
+        alt='Creative Commons License'
+        src='https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png'
+      />
+    </OffsiteLink>
+    All other rights reserved. © {new Date().getFullYear()}
+    <br />
+    Built with <OffsiteLink href='https://www.gatsbyjs.org'>Gatsby</OffsiteLink>.
+    Hosted on <OffsiteLink href='https://www.netlify.com/'>Netlify</OffsiteLink>.
+    Source code available on <OffsiteLink href='https://github.com/jnf/jnf.dev'>Github</OffsiteLink>.
+  </footer>
