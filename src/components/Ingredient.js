@@ -76,7 +76,7 @@ export const SystemSwitcher = ({ scale, legend }) => {
   )
 }
 
-const Ingredient = ({ scale, value, unit, description, href }, index) => {
+export const Ingredient = ({ scale, value, unit, description, href }, index) => {
   const foodContext = useContext(FoodContext)
   const contextUnit = `${scale}Scale`
   const [currentValue, setCurrentValue] = useState(value)
@@ -89,15 +89,19 @@ const Ingredient = ({ scale, value, unit, description, href }, index) => {
   }, [foodContext[contextUnit]])
 
   return (
-    <li key={`ingredient-${index}`}>
+    <>
       {currentValue}{currentUnit}{' '}
       {href ? <OffsiteLink href={href}>{description}</OffsiteLink> : description}
-    </li>
+    </>
   )
 }
 
 export const IngredientList = ({ ingredients = [] }) =>
-  <ul>{ingredients.map(Ingredient)}</ul>
+  <ul>
+    {ingredients.map((props, index) =>
+      <li key={`ingredient-${index}`}>{Ingredient({ ...props })}</li>
+    )}
+  </ul>
 
 FoodContextProvider.propTypes = {
   children: PropTypes.node,
