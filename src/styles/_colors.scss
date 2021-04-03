@@ -1,0 +1,21 @@
+// core colors
+$red: rgb(115, 63, 73);
+$pink: rgb(217, 102, 123);
+$black: rgb(38, 38, 38);
+$green: #66747C;
+$yellow: #F3CFAC;
+$white: #F2E1CF;
+
+// map core colors to common properties
+$img-border: $black;
+$border-color: $red;
+$border-interactive: $pink;
+$button-selected: lighten($green, 33%);
+$dividers: $green;
+$link-color: $red;
+$link-interactive: $pink;
+$link-visited: $red;
+$copy-color: $black;
+
+// map colors to concepts
+$invisible: rgba(0, 0, 0, 0);
