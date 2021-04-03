@@ -8,5 +8,5 @@ export const OffsiteLink = ({ href, children }) =>
 
 OffsiteLink.propTypes = {
   href: PropTypes.string.isRequired,
-  children: PropTypes.element.isRequired
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
 }

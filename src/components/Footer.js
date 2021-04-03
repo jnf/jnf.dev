@@ -7,11 +7,13 @@ export const Footer = () =>
     <p className='site-footer--licensing'>
       This content by <a href='https://jnf.dev'>jnf</a> is licensed under a {' '}
       <OffsiteLink href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>
-        Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
-        <img
-          alt='Creative Commons License'
-          src='https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png'
-        />
+        <>
+          Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+          <img
+            alt='Creative Commons License'
+            src='https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png'
+          />
+        </>
       </OffsiteLink>
     </p>
     <p>
