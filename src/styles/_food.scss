@@ -10,7 +10,7 @@
       height: 1px;
       display: block;
       margin-top: 0.25rem;
-      background-color: #ddd;
+      background-color: $dividers;
     }
   }
 
@@ -28,7 +28,7 @@
   }
 
   hr {
-    background: #ddd;
+    background: $dividers;
     margin: 1.45rem auto;
     width: 66%;
   }

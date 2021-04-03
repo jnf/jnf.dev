@@ -11,16 +11,16 @@
   .links-toggle {
     background: transparent;
     border: 0;
-    border-bottom: 1px solid #733f49;
-    color: #733f49;
+    border-bottom: 1px solid $border-color;
+    color: $link-color;
     display: block;
     padding: 0;
     margin-bottom: calc(1.45rem / 3);
 
     &:focus,
     &:active {
-      border-color: rgb(217, 102, 123);
-      color: rgb(217, 102, 123);
+      border-color: $border-interactive;
+      color: $link-interactive;
     }
   }
 

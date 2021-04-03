@@ -74,13 +74,13 @@
   margin: 0 1rem 0 0;
 
   img {
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: 1px solid $invisible;
     border-radius: 50%;
     margin: 0;
     transition: all 0.2s ease-in;
 
     &:hover {
-      border-color: rgb(217, 102, 123);
+      border-color: $border-interactive;
     }
   }
 }
@@ -127,12 +127,12 @@
   border: none;
 
   &:hover .links-connect__icon {
-    border-color: rgb(217, 102, 123);
+    border-color: $border-interactive;
   }
 }
 
 .links-connect__icon {
-  border: 1px solid rgba(0, 0, 0, 0);
+  border: 1px solid $invisible;
   border-radius: 50%;
   height: 2rem;
   transition: all 0.2s ease-in;

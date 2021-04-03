@@ -1,18 +1,18 @@
 html, body {
   margin: 0;
-  color: rgb(38, 38, 38);
+  color: $copy-color;
 }
 
 a,
 a:visited {
-  color: rgb(115, 63, 73);
-  border-bottom: 1px solid rgb(115, 63, 73);
+  color: $red;
+  border-bottom: 1px solid $red;
   text-decoration: none;
   transition: all 0.2s ease-in;
 }
 
 a:hover,
 a:active {
-  color: rgb(217, 102, 123);
-  border-color: rgb(217, 102, 123);
+  color: $link-interactive;
+  border-color: $border-interactive;
 }
