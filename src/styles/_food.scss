@@ -1,3 +1,57 @@
+.systemSwitchers {
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  margin: 0 0 1.45rem;
+}
+
+.systemSwitch {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 1rem 1rem;
+  margin: 0 1.45rem 0 0;
+
+  legend {
+    font-style: italic;
+    padding: 0 0.15rem;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    color: $link-color;
+    padding: 0 0.5rem;
+
+    &.selected {
+      background: $button-selected;
+    }
+
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $border-interactive;
+      color: $link-interactive;
+    }
+
+    &:first-of-type {
+      border-radius: 15% 0 0 15%;
+      border-left: 1px solid $border-color;
+    }
+
+    &:last-of-type {
+      border-radius: 0 15% 15% 0;
+      border-right: 1px solid $border-color;
+    }
+
+    &:nth-of-type(2n) {
+      border: 1px solid $border-color;
+    }
+  }
+}
+
 .food {
   h2 {
     display: block;
