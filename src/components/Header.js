@@ -6,7 +6,7 @@ import { Navigation } from '../components/Navigation'
 import { Connect } from '../components/Connect'
 import jnfImage from '../images/jnf.jpg'
 
-const Header = ({ siteTitle }) =>
+export const Header = ({ siteTitle }) =>
   <div className='site-sidebar'>
     <header className='site-sidebar--header'>
       <Link to='/' className='site-sidebar--header__avatar'>
@@ -30,5 +30,3 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: '',
 }
-
-export default Header
