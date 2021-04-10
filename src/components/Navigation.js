@@ -48,8 +48,10 @@ export const Navigation = () => {
               {navs[category].map(({ title, venue, date, location, slug }) =>
                 <li key={slug}>
                   <Link to={slug} replace>{title}</Link>
-                  <small style={{ display: 'block' }}>
-                    {venue && location && `${venue}, ${location}, `}{date}
+                  <small>
+                    {venue && location && `${venue}, ${location}, `}
+                    {venue && location && <br />}
+                    {date}
                   </small>
                 </li>
               )}

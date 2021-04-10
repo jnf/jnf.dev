@@ -496,7 +496,6 @@ th {
   font-weight: bold;
 }
 li {
-  margin-bottom: calc(1.45rem / 2);
   column-break-inside: avoid;
   break-inside: avoid-column;
 }

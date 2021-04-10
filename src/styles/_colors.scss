@@ -16,6 +16,7 @@ $link-color: $red;
 $link-interactive: $pink;
 $link-visited: $red;
 $copy-color: $black;
+$nav-item: lighten($red, 50%);
 
 // map colors to concepts
 $invisible: rgba(0, 0, 0, 0);
