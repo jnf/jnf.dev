@@ -55,9 +55,17 @@
     margin: 2rem 0 0;
   }
 
-  .gatsby-resp-image-figure > p {
-    margin: 0;
+  .gatsby-resp-image-figure {
+    > p {
+      margin: 0;
+    }
+
+    img[src*=".gif"] {
+      display: block;
+      margin: 0 auto;
+    }
   }
+
 
   .gatsby-resp-image-figcaption {
     font-style: italic;
