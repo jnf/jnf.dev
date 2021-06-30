@@ -5,6 +5,7 @@ $black: rgb(38, 38, 38);
 $green: #66747C;
 $yellow: #F3CFAC;
 $white: #F2E1CF;
+$grey: #ddd;
 
 // map core colors to common properties
 $img-border: $black;
@@ -17,6 +18,7 @@ $link-interactive: $pink;
 $link-visited: $red;
 $copy-color: $black;
 $nav-item: lighten($red, 50%);
+$poetry: $grey;
 
 // map colors to concepts
 $invisible: rgba(0, 0, 0, 0);
