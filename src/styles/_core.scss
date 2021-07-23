@@ -16,3 +16,8 @@ a:active {
   color: $link-interactive;
   border-color: $border-interactive;
 }
+
+blockquote {
+  background: $poetry;
+  font-style: italic;
+}
