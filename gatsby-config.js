@@ -5,6 +5,7 @@ module.exports = {
     author: '@_jnf',
   },
   plugins: [
+    'gatsby-plugin-netlify',
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     {
@@ -47,12 +48,5 @@ module.exports = {
         ],
       }
     },
-    {
-      resolve: 'gatsby-redirect-from',
-      options: {
-        query: 'allMdx',
-      },
-    },
-    'gatsby-plugin-meta-redirect'
   ],
 }
