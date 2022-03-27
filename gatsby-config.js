@@ -1,3 +1,4 @@
+const { join } = require('path')
 module.exports = {
   siteMetadata: {
     title: 'jnf.dev',
@@ -12,11 +13,18 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/images`,
+        path: join(__dirname, 'src', 'images'),
       },
     },
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaults: {
+          formats: ['auto', 'webp'],
+        }
+      }
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -27,7 +35,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/content`,
+        path: join(__dirname, 'src', 'content'),
       },
     },
     {
