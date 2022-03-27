@@ -20,7 +20,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 }
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
   const talkTemplate = path.resolve('src/templates/talk.js')
   const result = await graphql(`
     {
@@ -32,6 +32,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           node {
             frontmatter {
               path
+              redirects
             }
           }
         }
@@ -45,9 +46,17 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
 
-  result.data.allMdx.edges.forEach(({ node }) => {
+  result.data.allMdx.edges.forEach(({ node: { frontmatter } }) => {
+    const { path, redirects = [] } = frontmatter
+    redirects.forEach(redirect => createRedirect({
+      fromPath: redirect,
+      toPath: path,
+      redirectInBrowser: true,
+      isPermanent: true
+    }))
+
     createPage({
-      path: node.frontmatter.path,
+      path,
       component: talkTemplate,
       context: {}, // additional data can be passed via context
     })
