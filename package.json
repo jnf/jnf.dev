@@ -38,7 +38,7 @@
     "*.js": "eslint --cache --fix"
   },
   "keywords": [],
-  "license": "MIT",
+  "license": "see LICENSE file",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby clean; gatsby develop",
