@@ -1,5 +1,4 @@
 import React from 'react'
-import twitterIcon from '../images/twitter.svg'
 import githubIcon from '../images/github.svg'
 import linkedinIcon from '../images/linkedin.svg'
 import discogsIcon from '../images/discogs.svg'
@@ -10,7 +9,6 @@ export const Connect = () =>
     <ul className='links-connect'>
       {
         [
-          ['Twitter', 'https://twitter.com/_jnf', twitterIcon],
           ['Bandcamp', 'https://bandcamp.com/jnf', bandcampIcon],
           ['Github', 'https://www.github.com/jnf/', githubIcon],
           ['Discogs', 'https://www.discogs.com/user/jnf', discogsIcon],
