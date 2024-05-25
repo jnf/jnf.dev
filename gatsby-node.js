@@ -22,17 +22,20 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage, createRedirect } = actions
   const talkTemplate = path.resolve('src/templates/talk.js')
+  const componentFor = (slug) => `${talkTemplate}?__contentFilePath=${slug}`
+
   const result = await graphql(`
     {
-      allMdx(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
+      allMdx(sort: {frontmatter: {date: DESC}}, limit: 1000) {
         edges {
           node {
+            id
             frontmatter {
               path
               redirects
+            }
+            internal {
+              contentFilePath
             }
           }
         }
@@ -46,7 +49,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
 
-  result.data.allMdx.edges.forEach(({ node: { frontmatter } }) => {
+  result.data.allMdx.edges.forEach(({ node: { id, frontmatter, internal: { contentFilePath } } }) => {
     const { path, redirects = [] } = frontmatter
     redirects.forEach(redirect => createRedirect({
       fromPath: redirect,
@@ -57,8 +60,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     createPage({
       path,
-      component: talkTemplate,
-      context: {}, // additional data can be passed via context
+      component: componentFor(contentFilePath),
+      context: { id }, // additional data can be passed via context
     })
   })
 }
