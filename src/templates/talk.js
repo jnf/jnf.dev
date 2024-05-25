@@ -1,13 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { Layout } from './page'
 import { Seo } from '../components/Seo'
 
 export const pageQuery = graphql`
-  query($path: String!) {
-    mdx(frontmatter: { path: { eq: $path } }) {
+  query($id: String!) {
+    mdx(id: { eq: $id }) {
       body
       frontmatter {
         category
@@ -23,9 +22,9 @@ export const pageQuery = graphql`
 `
 
 const Template = ({
+  children,
   data: {
     mdx: {
-      body,
       frontmatter: {
         category,
         date,
@@ -48,13 +47,14 @@ const Template = ({
         </h1>
       </section>
       <section className='talk-content'>
-        <MDXRenderer>{body}</MDXRenderer>
+        {children}
       </section>
     </article>
   </Layout>
 
 Template.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
+  children: PropTypes.object.isRequired
 }
 
 export default Template
