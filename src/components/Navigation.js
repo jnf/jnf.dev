@@ -4,7 +4,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 export const Navigation = () => {
   const { allMdx } = useStaticQuery(graphql`
     {
-      allMdx {
+      allMdx (sort: { frontmatter: { date: DESC } } ){
         edges {
           node {
             fields {
