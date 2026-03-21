@@ -1,3 +1,4 @@
+const express = require('express')
 const path = require('path')
 
 exports.onCreateNode = ({ node, actions }) => {
@@ -17,6 +18,10 @@ exports.onCreateWebpackConfig = ({ actions }) => {
       modules: [path.resolve(__dirname, 'src'), 'node_modules']
     }
   })
+}
+
+exports.onCreateDevServer = ({ app }) => {
+  app.use(express.static('static'))
 }
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
