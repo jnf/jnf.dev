@@ -53,5 +53,8 @@
   },
   "bugs": {
     "url": "https://github.com/jnf/jnf.dev/issues"
+  },
+  "overrides": {
+    "lmdb": "3.5.2"
   }
 }
